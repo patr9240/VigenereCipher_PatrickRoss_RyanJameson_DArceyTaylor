@@ -42,7 +42,7 @@ namespace VigenereCipher
                     int index = Array.IndexOf(alpha, messageChar);
                     int rotValue = Array.IndexOf(alpha, keyArray[keyIndex]);
 
-                    if (index + rotValue > alpha.Length)
+                    if (index + rotValue >= alpha.Length)
                     {
                         int remainder = alpha.Length - index;
                         result += alpha[rotValue - remainder];

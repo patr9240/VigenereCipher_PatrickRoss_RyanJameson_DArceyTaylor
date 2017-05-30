@@ -32,8 +32,8 @@
                     <br />
                     <hr />
                     <div class="form-group">
-                        <asp:Label ID="FinalMessageLabel" runat="server" Text="Encrypted Message"></asp:Label>
-                        <asp:TextBox CssClass="form-control" ID="FinalMessageTextBox" TextMode="multiline" Columns="50" Rows="5" runat="server"></asp:TextBox>
+                        <asp:Label ID="FinalMessageLabel" runat="server" Text="Message"></asp:Label>
+                        <asp:TextBox CssClass="form-control" ID="FinalMessageTextBox" TextMode="multiline" Columns="50" Rows="5" runat="server" ReadOnly="true"></asp:TextBox>
                     </div>
             </div>
         </div>
