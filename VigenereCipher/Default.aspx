@@ -8,12 +8,14 @@
             <div class="col-md-offset-3 col-md-6">
                    <div class="form-group">
                         <asp:Label ID="MessageLabel" runat="server" Text="Message for Encryption/Decryption"></asp:Label>
-                        <asp:TextBox CssClass="form-control" ID="MessageTextBox" TextMode="multiline" Columns="50" Rows="5" runat="server" required="true" CausesValidation="True"></asp:TextBox>
+                        <asp:TextBox CssClass="form-control" ID="MessageTextBox" MaxLength="60" runat="server" required="true" CausesValidation="True"></asp:TextBox>
+                       <asp:RegularExpressionValidator Display = "Dynamic" ControlToValidate = "MessageTextBox" ID="RegularExpressionValidatorMessageTextBox" ValidationExpression = "^[\s\S]{20,60}$" runat="server" ErrorMessage="The encryption key must be between 20 and 60 characters long."></asp:RegularExpressionValidator>
                     </div>
 
                     <div class="form-group">
                         <asp:Label ID="EncryptionKeyLabel" runat="server" Text="Encryption Key"></asp:Label>
-                        <asp:TextBox CssClass="form-control" ID="EncryptionKeyTextBox" runat="server" required="true" CausesValidation="True"></asp:TextBox>
+                        <asp:TextBox CssClass="form-control" ID="EncryptionKeyTextBox" MaxLength="10" runat="server" required="true" CausesValidation="True"></asp:TextBox>
+                        <asp:RegularExpressionValidator Display = "Dynamic" ControlToValidate = "EncryptionKeyTextBox" ID="RegularExpressionValidatorKeyTextBox" ValidationExpression = "^[\s\S]{5,10}$" runat="server" ErrorMessage="The encryption key must be between 5 and 10 characters long."></asp:RegularExpressionValidator>
                     </div>
 
                     <div>

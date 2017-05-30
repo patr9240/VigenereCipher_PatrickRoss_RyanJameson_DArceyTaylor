@@ -31,6 +31,15 @@ namespace VigenereCipher {
         protected global::System.Web.UI.WebControls.TextBox MessageTextBox;
         
         /// <summary>
+        /// RegularExpressionValidatorMessageTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorMessageTextBox;
+        
+        /// <summary>
         /// EncryptionKeyLabel control.
         /// </summary>
         /// <remarks>
@@ -47,6 +56,15 @@ namespace VigenereCipher {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox EncryptionKeyTextBox;
+        
+        /// <summary>
+        /// RegularExpressionValidatorKeyTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorKeyTextBox;
         
         /// <summary>
         /// Encrypt control.
