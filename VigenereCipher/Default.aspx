@@ -17,12 +17,12 @@
                     </div>
 
                     <div>
-                        <asp:RadioButton id="Encrypt" runat="server" GroupName="EncryptOrDecrypt" Text="Encrypt"></asp:RadioButton>
+                        <asp:RadioButton id="Encrypt" runat="server" GroupName="EncryptOrDecrypt" Text="Encrypt" Checked="true"></asp:RadioButton>
                         <asp:RadioButton id="Decrypt" runat="server" GroupName="EncryptOrDecrypt" Text="Decrypt"></asp:RadioButton>
                     </div>
 
                     <div>
-                        <asp:RadioButton id="ROT0" runat="server" GroupName="RotSelection" Text="ROT0"></asp:RadioButton>
+                        <asp:RadioButton id="ROT0" runat="server" GroupName="RotSelection" Text="ROT0" Checked="true"></asp:RadioButton>
                         <asp:RadioButton id="ROT1" runat="server" GroupName="RotSelection" Text="ROT1"></asp:RadioButton>
                     </div>
 
