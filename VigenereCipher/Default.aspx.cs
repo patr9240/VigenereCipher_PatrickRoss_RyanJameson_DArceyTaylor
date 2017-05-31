@@ -19,6 +19,16 @@ namespace VigenereCipher
             string message = MessageTextBox.Text;
             string key = EncryptionKeyTextBox.Text;
             string result = "";
+            int rotModifier = 0;
+
+            if (ROT0.Checked)
+            {
+                rotModifier = 0;
+            }
+            else if (ROT1.Checked)
+            {
+                rotModifier = 1;
+            }
 
             int keyIndex = 0;
 
@@ -40,7 +50,7 @@ namespace VigenereCipher
                     }
                     
                     int index = Array.IndexOf(alpha, messageChar);
-                    int rotValue = Array.IndexOf(alpha, keyArray[keyIndex]);
+                    int rotValue = Array.IndexOf(alpha, keyArray[keyIndex]) + rotModifier;
 
                     if (index + rotValue >= alpha.Length)
                     {
@@ -71,7 +81,7 @@ namespace VigenereCipher
                     }
 
                     int index = Array.IndexOf(alpha, messageChar);
-                    int rotValue = Array.IndexOf(alpha, keyArray[keyIndex]);
+                    int rotValue = Array.IndexOf(alpha, keyArray[keyIndex]) + rotModifier;
 
                     if (index - rotValue < 0)
                     {
